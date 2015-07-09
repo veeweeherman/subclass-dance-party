@@ -31,7 +31,8 @@ $(document).ready(function(){
     window.dancers.push(dancer)
 
     dancer.$node.on("mouseover", function(event){
-      alert("hello");
+      $('.dancer').css({'transform': 'rotate(180deg)' })
+      // alert("hello");
     });
 
   });
