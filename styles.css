@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color:#000;
+  background-image: url("http://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif   ");
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,7 +22,14 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid blue;
   border-radius:10px;
   position:absolute;
+  
+
 }
+
+/*body {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+}*/
