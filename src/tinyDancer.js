@@ -12,5 +12,7 @@ makeTinyDancer.prototype.constructor = makeTinyDancer;
 // define class methods
 makeTinyDancer.prototype.step = function(){
   makeDancer.prototype.step.call(this);
-  this.$node.toggle("slow");
+  this.$node.css({"height","50px"}); 
+  this.$node.toggle("explode")
+  
 }

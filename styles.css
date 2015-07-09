@@ -22,12 +22,20 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid blue;
+  border:40px solid green;
+  border-radius:10px;
+  position:absolute;
+
+
+}
+
+/*.tinyDancer {
+  border:20px solid red;
   border-radius:10px;
   position:absolute;
   
 
-}
+}*/
 
 /*body {
     background-image: url("paper.gif");

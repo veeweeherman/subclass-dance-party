@@ -28,6 +28,17 @@ $(document).ready(function(){
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+
+// trying something OUT
+  // $('.tinyDancer').click(function(){$(this).css('border', '20px solid green')})
+//     var tinyDancer = new dancerMakerFunction(
+//       $("body").height() * Math.random(),
+//       $("body").width() * Math.random(),
+//       Math.random() * 1000
+//     );
+//     $('body').append(tinyDancer.$node);
+// // 
+
   });
 });
 
