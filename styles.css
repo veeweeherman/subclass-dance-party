@@ -29,13 +29,21 @@ body, a:link, a:visited, a:active{
 
 }
 
-/*.tinyDancer {
+.dancer.tiny {
   border:20px solid red;
-  border-radius:10px;
-  position:absolute;
+  border-radius:20px;
+  /*position:absolute;*/
   
 
-}*/
+}
+
+.dancer.blurry {
+  border:30px solid yellow;
+  border-radius:40px;
+  /*position:absolute;*/
+  
+
+}
 
 /*body {
     background-image: url("paper.gif");
