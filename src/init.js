@@ -29,15 +29,23 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer)
+
+    dancer.$node.on("mouseover", function(event){
+      alert("hello");
+    });
+
   });
 
-  
+    
 
   $(".lineUp").on("click", function(event){
     window.dancers.forEach(function(dancer){
         dancer.lineUp();
     });
   })
+
+// console.log($('.dancer'))
+
 
 
 });
