@@ -28,17 +28,31 @@ $(document).ready(function(){
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
-
-// trying something OUT
-  // $('.tinyDancer').click(function(){$(this).css('border', '20px solid green')})
-//     var tinyDancer = new dancerMakerFunction(
-//       $("body").height() * Math.random(),
-//       $("body").width() * Math.random(),
-//       Math.random() * 1000
-//     );
-//     $('body').append(tinyDancer.$node);
-// // 
-
+    window.dancers.push(dancer)
   });
+
+  
+
+  $(".lineUp").on("click", function(event){
+    window.dancers.forEach(function(dancer){
+        dancer.lineUp();
+    });
+  })
+
+
 });
+
+  //   var dancerLineUpFunctionName = $(this).data("data-dancer-lineup-function-name");
+  //   var dancerLineUpFunction = window[dancerLineUpFunctionName];
+
+  //   // loop thru the array that holds all dancer, and invoke lineUp() on each of them
+  //   // loop thru the div with all the spans w class "dancer"
+
+  //   for (var i = 0; i < $('body.div.span').length; i++) {
+  //     if ($('span').hasClass("dancer")) {
+  //       makeDancer.lineUp($('span'))
+  //     }
+  
+  //   };
+  // });
 

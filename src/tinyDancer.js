@@ -4,7 +4,7 @@ var makeTinyDancer = function(top, left, timeBetweenSteps){
   // so we must keep a copy of the old version of this function
   // this.oldStep = this.step;
   // this.$node = $('<span class="dancer tiny"></span>');
-  this.$node = $('<span class="dancer tiny"><img src="http://i.imgur.com/vDNZM1D.gif"></span>');
+  this.$node = $('<span class="dancer" class="dancer tiny"><img src="http://i.imgur.com/vDNZM1D.gif"></span>');
   this.setPosition(top, left);
 };
 

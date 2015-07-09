@@ -22,6 +22,12 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
+    border:20px solid white;
+  border-radius:20px;
+  position:absolute;
+}
+
+.dancer.blinky{
   border:40px solid green;
   border-radius:10px;
   position:absolute;
@@ -30,9 +36,10 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer.tiny {
-  border:20px solid red;
+  /*border:20px solid red;*/
+  border: 0;
   border-radius:20px;
-  
+
   /*position:absolute;*/
   
 
