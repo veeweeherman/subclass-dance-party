@@ -46,9 +46,6 @@ $(document).ready(function(){
     });
   })
 
-// console.log($('.dancer'))
-
-
 
 });
 
