@@ -3,8 +3,9 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
   // this.oldStep = this.step;
-  this.$node = $('<span class="dancer" class="dancer blinky"><img src="http://ak-hdl.buzzfed.com/static/enhanced/webdr03/2013/3/10/11/anigif_enhanced-buzz-1725-1362928275-0.gif"></span>');
+  this.$node = $('<span class="dancer" id="blinkyDancer"><img src="http://ak-hdl.buzzfed.com/static/enhanced/webdr03/2013/3/10/11/anigif_enhanced-buzz-1725-1362928275-0.gif"></span>');
   this.setPosition(top, left);
+  this.degree = 0;
   // this.lineUp(bottom)
 };
 
@@ -15,12 +16,15 @@ makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 // define class methods
 makeBlinkyDancer.prototype.step = function(){
   makeDancer.prototype.step.call(this);
-  this.$node.toggle();
+  this.$node.toggle("explode");
+  this.$node.rotate(this.degree)
+  this.degree += 5;
 }
 
-
-
-
+jQuery.fn.rotate = function(degree){
+  $(this).css({'transform': 'rotate('+degree+'deg)'})
+  return $(this)
+}
 
   // var oldStep = blinkyDancer.step;
 

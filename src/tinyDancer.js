@@ -4,8 +4,9 @@ var makeTinyDancer = function(top, left, timeBetweenSteps){
   // so we must keep a copy of the old version of this function
   // this.oldStep = this.step;
   // this.$node = $('<span class="dancer tiny"></span>');
-  this.$node = $('<span class="dancer" class="dancer tiny"><img src="http://i.imgur.com/vDNZM1D.gif"></span>');
+  this.$node = $('<span class="dancer" id="tinyDancer"><img src="http://i.imgur.com/vDNZM1D.gif"></span>');
   this.setPosition(top, left);
+  this.degree =0
 };
 
 // pseudoclassical plumbing
@@ -17,5 +18,13 @@ makeTinyDancer.prototype.step = function(){
   makeDancer.prototype.step.call(this);
  
   this.$node.toggle("explode")
-  
+  // this.$node.on("mouseover", function(event){
+  this.$node.rotate(this.degree)
+      // ;css({'transform': 'rotate(135deg)' })
+      // alert("hello");
+	this.degree += 5
+}
+jQuery.fn.rotate = function(degree){
+	$(this).css({'transform': 'rotate('+degree+'deg)'})
+	return $(this)
 }

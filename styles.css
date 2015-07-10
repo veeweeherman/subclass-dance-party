@@ -4,7 +4,7 @@ body, html{
 body{
   margin: 0px;
   background-color:#000;
-  background-image: url("http://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif   ");
+  background-image: url("http://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif  ");
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -22,39 +22,21 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-    border:20px solid white;
+  border:20px solid blue;
   border-radius:20px;
   position:absolute;
 }
 
-
-.dancer.blinky{
-  border:40px solid green;
-  border-radius:10px;
-  position:absolute;
-
-
+#blinkyDancer {
+  border:20px solid white;  
 }
-
-.dancer.tiny {
-  /*border:20px solid red;*/
-  border: 0;
-  border-radius:20px;
-
-  /*position:absolute;*/
-  
-
+#blurryDancer {
+  border:30px solid red; 
 }
-
-.dancer.blurry {
-  border:30px solid yellow;
-  border-radius:40px;
-  /*position:absolute;*/
-  
-
+#tinyDancer {
+  border:40px solid blue; 
 }
-
-/*body {
-    background-image: url("paper.gif");
-    background-color: #cccccc;
-}*/
+/*span {
+    -webkit-transition: width 2s, height 4s; /* Safari */
+    /*transition: width 2s, height 4s;
+} */

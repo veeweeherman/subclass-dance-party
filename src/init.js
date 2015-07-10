@@ -30,10 +30,10 @@ $(document).ready(function(){
     $('body').append(dancer.$node);
     window.dancers.push(dancer)
 
-    dancer.$node.on("mouseover", function(event){
-      $('.dancer').css({'transform': 'rotate(180deg)' })
-      // alert("hello");
-    });
+    // dancer.$node.on("mouseover", function(event){
+    //   $('.dancer').css({'transform': 'rotate(135deg)' })
+    //   // alert("hello");
+    // });
 
   });
 
@@ -41,7 +41,8 @@ $(document).ready(function(){
 
   $(".lineUp").on("click", function(event){
     window.dancers.forEach(function(dancer){
-        dancer.lineUp();
+      
+      dancer.lineUp();
     });
   })
 
